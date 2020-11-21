@@ -1,0 +1,5 @@
+dataclasses
+pycairo
+pygobject
+pydantic
+

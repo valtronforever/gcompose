@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GCompose
+GenericName=GCompose
+Categories=Development;Docker;
+Exec=gcompose
+StartupNotify=true
+Terminal=false
+Icon=gcompose
