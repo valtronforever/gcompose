@@ -25,8 +25,8 @@ mkdir -p ${DIST_DIR}/${FULLNAME}/usr/share/icons/hicolor/scalable/apps
 mkdir -p ${DIST_DIR}/${FULLNAME}/usr/share/applications
 
 ./setup.py sdist
-rsync -a --no-i-r --human-readable --info=progress2 ${BASEDIR}/${PACKAGE_NAME} ${DIST_DIR}/${FULLNAME}/usr/lib/python3/dist-packages/${PACKAGE_NAME}
-rsync -a --no-i-r --human-readable --info=progress2 ${BASEDIR}/${PACKAGE_NAME}.egg-info ${DIST_DIR}/${FULLNAME}/usr/lib/python3/dist-packages/${PACKAGE_NAME}.egg-info
+rsync -a --no-i-r --human-readable --info=progress2 ${BASEDIR}/${PACKAGE_NAME} ${DIST_DIR}/${FULLNAME}/usr/lib/python3/dist-packages
+rsync -a --no-i-r --human-readable --info=progress2 ${BASEDIR}/${PACKAGE_NAME}.egg-info ${DIST_DIR}/${FULLNAME}/usr/lib/python3/dist-packages
 cp ${BASEDIR}/bin/* ${DIST_DIR}/${FULLNAME}/usr/bin/
 cp ${BASEDIR}/data/icons/* ${DIST_DIR}/${FULLNAME}/usr/share/icons/hicolor/scalable/apps/
 cp ${BASEDIR}/data/desktop/* ${DIST_DIR}/${FULLNAME}/usr/share/applications
